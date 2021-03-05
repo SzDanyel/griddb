@@ -1,0 +1,12 @@
+szo=scan(file = "szo1990.txt")
+szo.norm = rnorm(length(szo), mean(szo), sd(szo))
+plot( szo, type = "l", xlab = "t [nap]", ylab = "h [cm]", lwd = 2); lines(szo.norm)
+summary(szo)
+sd(szo)*2
+IQR(szo)
+summary(szo.norm)
+quantile(szo)
+set.seed(9041)
+rnorm(length(szo), mean(szo), sd(szo))
+y=rnorm(length(szo), mean(szo), sd(szo))
+summary(y)
